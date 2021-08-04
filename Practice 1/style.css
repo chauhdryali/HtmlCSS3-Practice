@@ -1,12 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
-
-ul{
-    list-style-type: none;
-    flex-flow: row;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+h4 {
+    font-size: 13px;
+    color: #00ed86;
+    text-transform: uppercase;
+}
+
+.btn {
+    background: #fff;
+    border: none;
+    padding: 20px 32px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
+    min-width: 136px;
+    cursor: pointer;
+    line-height: 16px;
+}
+
+.btn-cta:hover {
+    opacity: 0.8;
+}
+
+.legal-text {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+/* Header */
+
+.header {
+    height: 530px;
+    background: url(img/header.jpg) no-repeat center center / cover;
+}
+
+.header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+}
+
+.header nav .login-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.header .logo {
+    width: 270px;
+    margin: 20px 0;
+}
+
+.header .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.header .header-text-1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header .header-text-2 {
+    font-size: 18px;
+    margin: 25px;
+}
+
+
+@media (max-width: 768px){
+    .header .logo {
+        width: 200px;
+    }
+    .header .header-content {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+
